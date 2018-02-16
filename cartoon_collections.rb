@@ -24,8 +24,6 @@ def find_the_cheese(snacks) #accepts any given array of whatever strings we want
   end
 end
 
-
-
 def starts_with_b(words) #searches through and will give me all words that start with b
   words_with_b = [] #create empty array to push them into using each
   words.each do |word| #iterate over the words array
