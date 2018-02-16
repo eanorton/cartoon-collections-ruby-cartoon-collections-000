@@ -20,7 +20,7 @@ end
 def find_the_cheese(snacks) #accepts any given array of whatever strings we want it to search through
   cheese_types = ["cheddar", "gouda", "camembert", "swiss cheese"] #our array of cheeses we want to see if given argument will include
   snacks.find do |cheese| #use .find which returns only the first item if true
-    cheese_types.include?(cheese) #use .include? to set it to return true if it includes any of the cheese types we are looking for. 
+    cheese_types.include?(cheese) #use .include? to set it to return true if it includes any of the cheese types we are looking for.
   end
 end
 
@@ -28,10 +28,9 @@ end
 
 def starts_with_b(words) #searches through and will give me all words that start with b
   words_with_b = [] #create empty array to push them into using each
-  words.each do |word|
-    if word.starts_with?("b")
-      words_with_b.push(word)
+  words.each do |word| #iterate over the words array
+    if word.starts_with?("b") #use an if statement and use .starts_with? - in this case "b"
+      words_with_b.push(word) #if there is a word that starts with b, push word into our words_with_b array
   end
-  words_with_b
+  words_with_b #make sure to put words_with_b here
 end
-
